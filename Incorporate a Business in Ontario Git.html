@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incorporate a Business in Ontario: A Practical Guide | AMQLegals</title>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            amq: {
+              top: '#0B1B33',
+              navy: '#0F294A',
+              navyHover: '#183B6B',
+              accentBlue: '#185A9D',
+              gold: '#F59E0B',
+              goldHover: '#D97706',
+              iceBlue: '#EBF3FB',
+              iceBorder: '#C2D6E8',
+              border: '#D0DCE7',
+              bodyText: '#2D3748',
+              headingText: '#0F294A',
+              canvasBg: '#F8FAFC',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    *, ::before, ::after { box-sizing: border-box; }
+    body { 
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; 
+      background-color: #F8FAFC; 
+      color: #2D3748; 
+      overflow-x: hidden;
+    }
+
+    .app-container {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      max-width: 100%;
+    }
+    @media (min-width: 640px) {
+      .app-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        max-width: 640px;
+      }
+    }
+    @media (min-width: 768px) {
+      .app-container {
+        max-width: 768px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .app-container {
+        max-width: 1024px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+    @media (min-width: 1280px) {
+      .app-container {
+        max-width: 1280px;
+      }
+    }
+    @media (min-width: 1440px) {
+      .app-container {
+        max-width: 1440px;
+      }
+    }
+    /* 22", 24", 27", 32" FHD/QHD/4K Monitors */
+    @media (min-width: 1680px) {
+      .app-container {
+        max-width: 1600px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+    }
+
+    .faq-accordion-grid {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .faq-item.active .faq-accordion-grid {
+      grid-template-rows: 1fr;
+    }
+    .faq-accordion-inner {
+      overflow: hidden;
+    }
+    .faq-item.active .faq-chevron {
+      transform: rotate(180deg);
+      color: #0F294A;
+    }
+
+    @keyframes live-pulse {
+      0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(15, 41, 74, 0.7); }
+      70% { transform: scale(1.1); box-shadow: 0 0 0 5px rgba(15, 41, 74, 0); }
+      100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(15, 41, 74, 0); }
+    }
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #0F294A;
+      border-radius: 9999px;
+      animation: live-pulse 2s infinite ease-in-out;
+    }
+
+    /* Premium Stepper Timeline Sidebar */
+    .timeline-nav {
+      position: relative;
+      padding: 0;
+    }
+    .timeline-nav::before {
+      content: '';
+      position: absolute;
+      top: 17px;
+      bottom: 17px;
+      left: 21px;
+      width: 2px;
+      background-color: #E2E8F0;
+      z-index: 1;
+    }
+
+    .timeline-step {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0.65rem 0.5rem 0.25rem;
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 2;
+      border-radius: 8px;
+      transition: background-color 0.15s ease;
+    }
+    .timeline-step:hover {
+      background-color: #F1F5F9;
+    }
+
+    .timeline-marker {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      border-radius: 9999px;
+      background-color: #FFFFFF;
+      border: 2px solid #CBD5E1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 9px;
+      margin-right: 12px;
+      flex-shrink: 0;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .timeline-marker-inner {
+      width: 6px;
+      height: 6px;
+      border-radius: 9999px;
+      background-color: transparent;
+      transition: all 0.2s ease;
+    }
+
+    .timeline-step:hover .timeline-marker {
+      border-color: #0F294A;
+    }
+
+    .timeline-step.active {
+      background-color: #EBF3FB;
+    }
+    .timeline-step.active .timeline-marker {
+      border-color: #0F294A;
+      background-color: #0F294A;
+      box-shadow: 0 0 0 3px rgba(15, 41, 74, 0.15);
+    }
+    .timeline-step.active .timeline-marker-inner {
+      background-color: #FFFFFF;
+    }
+
+    .timeline-label {
+      font-size: 13px;
+      line-height: 1.45;
+      font-weight: 600;
+      color: #4A5568;
+      transition: color 0.15s ease;
+    }
+    .timeline-step:hover .timeline-label {
+      color: #0F294A;
+    }
+    .timeline-step.active .timeline-label {
+      color: #0F294A !important;
+      font-weight: 700;
+    }
+
+    table {
+      border-collapse: collapse !important;
+      border-radius: 0 !important;
+    }
+    th, td {
+      border-radius: 0 !important;
+      box-sizing: border-box;
+    }
+
+    @media print {
+      .no-print, header, footer, aside, .editorial-badge-bar, #scrollNavWidget { display: none !important; }
+      main { width: 100% !important; max-width: 100% !important; margin: 0 !important; padding: 0 !important; box-shadow: none !important; border: none !important; }
+      body { font-size: 11pt; color: #000; background: #fff; }
+      .faq-accordion-grid { grid-template-rows: 1fr !important; }
+      table { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-blue-100 selection:text-amq-navy">
+
+  <!-- TOP HEADER -->
+  <header class="bg-amq-navy text-white sticky top-0 z-50 shadow-md border-b border-slate-700/60 no-print">
+    <div class="app-container">
+      <div class="flex flex-wrap items-center justify-between min-h-[5rem] py-3 sm:py-0">
+        
+        <a href="https://amqlegals.ca/" target="_blank" class="flex items-center space-x-3.5 group shrink-0">
+          <div class="w-10 h-10 rounded bg-white text-amq-navy flex items-center justify-center font-extrabold text-base shadow-sm border border-white/20">
+            AMQ
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-white group-hover:text-amber-300 transition">AMQLegals</span>
+            <span class="block text-[11px] text-slate-300 font-medium tracking-wider uppercase">Incorporation & Legal Services</span>
+          </div>
+        </a>
+
+        <nav class="flex items-center space-x-1.5 bg-slate-900/60 p-1.5 border border-white/10 rounded-lg shadow-inner mt-2 sm:mt-0 max-w-full overflow-x-auto">
+          <button id="nav-btn-incorp" onclick="switchGuide('incorporation')" class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all duration-200 bg-white text-amq-navy shadow-xs rounded-md flex items-center space-x-1.5 sm:space-x-2 cursor-pointer whitespace-nowrap">
+            <span>🏛️</span>
+            <span class="inline sm:hidden">Ontario Incorporation</span>
+            <span class="hidden sm:inline">Incorporate a Business in Ontario</span>
+          </button>
+          <button id="nav-btn-mbl" onclick="switchGuide('mbl')" class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold transition-all duration-200 text-slate-300 hover:text-white hover:bg-white/10 rounded-md flex items-center space-x-1.5 sm:space-x-2 cursor-pointer whitespace-nowrap">
+            <span>📜</span>
+            <span class="inline sm:hidden">Business License</span>
+            <span class="hidden sm:inline">Master Business License</span>
+          </button>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN VIEWPORT -->
+  <div class="app-container py-6 sm:py-8 lg:py-10">
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
+      
+      <!-- LEFT ARTICLE CONTAINER -->
+      <main class="w-full lg:w-3/4 bg-white rounded-xl border border-amq-border p-4 sm:p-7 lg:p-10 shadow-xs" id="article-root">
+        
+        <!-- GUIDE 1: INCORPORATE A BUSINESS IN ONTARIO -->
+        <article id="guide-incorporation" class="space-y-8">
+          
+          <div class="editorial-badge-bar flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3 mb-2">
+            <div class="flex items-center space-x-2 text-xs text-slate-500 font-medium">
+              <a href="https://amqlegals.ca/" target="_blank" class="hover:underline">Home</a>
+              <span>/</span>
+              <span>Guides</span>
+              <span>/</span>
+              <span class="text-amq-navy font-semibold">Ontario Incorporation</span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amq-iceBlue text-amq-navy border border-amq-iceBorder">
+                <span class="w-2 h-2 rounded-full bg-amq-navy"></span>
+                <span>Word Count: <strong id="article-word-count" class="text-amq-navy">1,578 Words</strong></span>
+              </span>
+              <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-amq-iceBlue text-amq-navy border border-amq-iceBorder">
+                Target: 800 – 1,500 Words (Compliant)
+              </span>
+            </div>
+          </div>
+
+          <!-- Section Intro (Direct Scroll Target for Overview) -->
+          <div id="section-intro" class="scroll-mt-24 guide-section border-b border-slate-200 pb-6">
+            <h1 class="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-amq-headingText tracking-tight leading-tight">
+              Incorporate a Business in Ontario: A Practical Guide
+            </h1>
+            <div class="mt-4 text-slate-600 text-[15px] sm:text-[16px] leading-relaxed space-y-3">
+              <p>
+                Incorporating in Ontario creates an independent legal entity under the Business Corporations Act (OBCA). This structure provides liability protection and may offer tax advantages when retaining business profits.
+              </p>
+              <p>
+                Unlike a sole proprietorship, a corporation owns property, signs leases, and incurs debt independently. Personal assets generally receive protection from business liabilities. However, this shield is not absolute: personal guarantees, unpaid wages, and statutory director obligations can still create personal exposure.
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 1 -->
+          <section id="section-1" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-3.5 border-l-4 border-amq-navy pl-3">
+              When Should You Incorporate Your Business in Ontario?
+            </h2>
+            <div class="text-[15px] text-slate-700 leading-relaxed space-y-3 mb-4">
+              <p>
+                You do not need a corporation on day one. A sole proprietorship suffices when starting small, operating with limited liability risk, and drawing business income for personal use.
+              </p>
+              <p>
+                Once your business generates consistent profits, incorporating becomes viable—especially if you retain earnings inside the company rather than withdrawing everything. Tax advantages depend on your personal tax rate, business income, and small business deduction eligibility. Incorporating also helps when onboarding investors or signing major commercial contracts.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-amq-iceBlue via-white to-slate-50 border-l-4 border-amq-border p-5 sm:p-5.5 text-[14px] text-slate-800 my-6 border-y border-r border-amq-border rounded-r-lg shadow-[0_4px_16px_-2px_rgba(15,41,74,0.06)]">
+              <strong class="text-amq-navy block mb-1.5 font-bold">📌 Important GST/HST Registration Note:</strong>
+              The CRA's $30,000 small-supplier threshold may require you to register for a GST/HST account. The timing depends on whether you cross the threshold in one quarter or four consecutive quarters.
+            </div>
+            <p class="text-[13px] text-slate-500 italic">
+              Official source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html" target="_blank" class="text-amq-accentBlue hover:underline font-medium">CRA – When to Register for and Start Charging GST/HST</a>
+            </p>
+          </section>
+
+          <!-- Section 2 -->
+          <section id="section-2" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-3.5 border-l-4 border-amq-navy pl-3">
+              Ontario Incorporation Costs, Tax Rates & Requirements (2026)
+            </h2>
+            <p class="text-[15px] text-slate-700 leading-relaxed mb-4">
+              Here are the main incorporation requirements and corporate tax considerations for Ontario businesses in 2026.
+            </p>
+
+            <div class="overflow-x-auto rounded-lg border border-amq-border mb-5 bg-white shadow-[0_10px_25px_-5px_rgba(15,41,74,0.10),0_6px_10px_-4px_rgba(15,41,74,0.05)]">
+              <table class="w-full text-left text-[14px] border-collapse min-w-[550px] sm:min-w-0">
+                <thead class="bg-amq-navy text-white text-[13px] font-bold uppercase tracking-wider">
+                  <tr>
+                    <th class="p-3.5 w-1/3 border-b border-r border-slate-700/80">Corporate Rule</th>
+                    <th class="p-3.5 border-b border-slate-700/80">Ontario Requirement</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-amq-border bg-white">
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Small Business Tax Rate</td>
+                    <td class="p-3.5 text-slate-700">11.2% combined (9% Federal + 2.2% Ontario), effective July 1, 2026, for eligible CCPC active business income</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">General Corporate Tax Rate</td>
+                    <td class="p-3.5 text-slate-700">26.5% combined (15% Federal + 11.5% Ontario)</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Director Residency</td>
+                    <td class="p-3.5 text-slate-700">No Canadian residency requirement under Ontario's OBCA</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Non-Resident Ownership</td>
+                    <td class="p-3.5 text-slate-700">Non-residents may own 100%, subject to applicable requirements</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Minimum Directors</td>
+                    <td class="p-3.5 text-slate-700">At least 1 for a standard private corporation</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Online Government Filing Fee</td>
+                    <td class="p-3.5 text-slate-700">$300 (Government fee only; self-service)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-gradient-to-r from-amq-iceBlue via-white to-slate-50 border-l-4 border-amq-border p-5 sm:p-5.5 text-[14px] text-slate-800 my-6 border-y border-r border-amq-border rounded-r-lg shadow-[0_4px_16px_-2px_rgba(15,41,74,0.06)]">
+              <strong class="text-amq-navy block mb-1.5 font-bold">📌 Important Tax Note:</strong>
+              The small business tax rate generally applies to eligible Canadian-Controlled Private Corporations (CCPCs) on up to $500,000 of active business income. Associated corporations may share this limit, while taxable capital can reduce the deduction. Foreign-controlled corporations generally cannot claim the CCPC small business deduction. Tax rate changes during a fiscal year may require prorated calculations.
+            </div>
+            <p class="text-[13px] text-slate-500 italic mb-6">
+              Official sources: 
+              <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html" target="_blank" class="text-amq-accentBlue hover:underline font-medium">CRA – Corporation Tax Rates</a> · 
+              <a href="https://www.ontario.ca/laws/statute/90b16" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Business Corporations Act</a> · 
+              <a href="https://www.ontario.ca/page/business-services-fees" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Incorporation Fees</a>
+            </p>
+
+            <!-- Table 2: Options Matrix Wrapper with Direct Scroll Target -->
+            <div id="section-2-matrix" class="scroll-mt-24 guide-section pt-2">
+              <h3 class="text-lg font-bold text-amq-headingText mb-2">Ontario Incorporation Options: DIY, Lawyer or Online Service?</h3>
+              <p class="text-[14.5px] text-slate-700 leading-relaxed mb-4">
+                You don't need a lawyer to incorporate. Choose your filing path based on cost, complexity, and record-keeping needs:
+              </p>
+
+              <div class="overflow-x-auto rounded-lg border border-amq-border shadow-[0_10px_25px_-5px_rgba(15,41,74,0.10),0_6px_10px_-4px_rgba(15,41,74,0.05)] bg-white">
+                <table class="w-full text-left text-[13px] border-collapse min-w-[720px] lg:min-w-0">
+                  <thead class="bg-amq-navy text-white text-[12px] font-bold uppercase tracking-wider">
+                    <tr>
+                      <th class="p-3 w-[22%] border-b border-slate-700/80 whitespace-nowrap">Filing Path</th>
+                      <th class="p-3 w-[18%] border-b border-slate-700/80 whitespace-nowrap">Estimated Cost</th>
+                      <th class="p-3 w-[18%] border-b border-slate-700/80 whitespace-nowrap">Processing Time</th>
+                      <th class="p-3 w-[42%] border-b border-slate-700/80">What to Consider (Pros & Cons)</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-amq-border">
+                    
+                    <tr class="hover:bg-slate-50/70 transition-colors">
+                      <td class="p-3 align-top border-r border-amq-border bg-white">
+                        <span class="font-bold text-slate-900 block text-[13.5px]">Direct Self-Filing</span>
+                        <span class="text-[11px] text-slate-500 font-medium">(OBR DIY Portal)</span>
+                      </td>
+                      <td class="p-3 align-top border-r border-amq-border bg-white whitespace-nowrap">
+                        <span class="font-bold text-slate-900 text-[13.5px] block">CAD $300 <span class="text-[11px] font-normal text-slate-500">(Gov fee)</span></span>
+                        <span class="block text-[11px] text-slate-500 mt-0.5">+ your time & manual effort</span>
+                      </td>
+                      <td class="p-3 align-top border-r border-amq-border bg-white whitespace-nowrap">
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11.5px] font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                          Immediate to a few days
+                        </span>
+                      </td>
+                      <td class="p-3 align-top bg-white text-slate-600 leading-relaxed text-[13px]">
+                        <strong class="text-slate-800">Saves upfront cash, but:</strong> You'll need to handle the filing yourself and prepare corporate records such as bylaws, resolutions, and share registers. Banks may also request these documents when opening a business account.
+                      </td>
+                    </tr>
+
+                    <tr class="hover:bg-slate-50/70 transition-colors">
+                      <td class="p-3 align-top border-r border-amq-border bg-white">
+                        <span class="font-bold text-slate-900 block text-[13.5px]">Traditional Law Firm</span>
+                        <span class="text-[11px] text-slate-500 font-medium">(Retained Counsel)</span>
+                      </td>
+                      <td class="p-3 align-top border-r border-amq-border bg-white whitespace-nowrap">
+                        <span class="font-bold text-slate-800 text-[13.5px] block">CAD $1,500 – $3,500</span>
+                        <span class="block text-[11px] text-slate-500 mt-0.5">+ HST & disbursements</span>
+                      </td>
+                      <td class="p-3 align-top border-r border-amq-border bg-white whitespace-nowrap">
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11.5px] font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                          1 to 2 Weeks
+                        </span>
+                      </td>
+                      <td class="p-3 align-top bg-white text-slate-600 leading-relaxed text-[13px]">
+                        <strong class="text-slate-800">Personalized legal support but:</strong> Law firms offer tailored advice on shareholder arrangements, share structures, and investor agreements, although costs may be higher.
+                      </td>
+                    </tr>
+
+                    <tr class="bg-gradient-to-r from-amq-iceBlue via-[#F4F8FC] to-white hover:bg-amq-iceBlue/90 transition-colors">
+                      <td class="p-3 align-top border-r border-amq-border">
+                        <div class="space-y-1.5">
+                          <span class="font-extrabold text-amq-navy block text-[13px] leading-snug">
+                            Online Incorporation<br>Service (AMQLegals)
+                          </span>
+                          <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[9.5px] font-extrabold bg-amq-gold text-slate-950 uppercase tracking-tight whitespace-nowrap">
+                            ★ Recommended Choice
+                          </span>
+                        </div>
+                      </td>
+                      <td class="p-3 align-top border-r border-amq-border whitespace-nowrap">
+                        <div class="bg-white p-2 rounded border border-amq-iceBorder inline-block shadow-2xs">
+                          <span class="text-[10.5px] text-slate-400 line-through block">Law Firm: $1,500 - $3,500</span>
+                          <span class="text-[15.5px] font-extrabold text-amq-navy block leading-tight">CAD $395 (Only)</span>
+                          <span class="text-[10.5px] text-emerald-700 font-bold block mt-0.5">
+                            $95 Agency + $300 Gov Fee
+                          </span>
+                        </div>
+                      </td>
+                      <td class="p-3 align-top border-r border-amq-border whitespace-nowrap">
+                        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11.5px] font-extrabold bg-blue-100/70 text-amq-navy border border-blue-200">
+                          ⚡ 1 to 2 Hours
+                        </span>
+                        <span class="block text-[10.5px] text-slate-500 mt-1">Direct OBR integration</span>
+                      </td>
+                      <td class="p-3 align-top">
+                        <div class="space-y-2.5">
+                          <p class="text-slate-800 text-[13px] leading-relaxed">
+                            <strong class="text-amq-navy font-bold">The practical choice:</strong> For business owners looking for a simpler way to incorporate in Ontario, <strong><a href="https://amqlegals.ca/product/ontario-corporation-registration/" target="_blank" class="underline underline-offset-2 text-amq-navy hover:text-amq-accentBlue font-extrabold">AMQLegals</a></strong> offers a $395 package covering the $300 government filing fee, $95 agency fee, document preparation, and corporate records. The team handles the paperwork and filing for you, saving you time and effort. For more complex incorporation needs, they can review your requirements and explain any additional services or costs involved.
+                          </p>
+                          <div>
+                            <a href="https://amqlegals.ca/product/ontario-corporation-registration/" target="_blank" class="inline-flex items-center gap-2 bg-amq-navy hover:bg-amq-navyHover text-white font-extrabold px-4 py-2.5 rounded-lg text-[12.5px] transition-colors duration-200 shadow-md hover:shadow-lg whitespace-nowrap">
+                              <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                              </svg>
+                              <span>Launch Your Ontario Corp — $395</span>
+                              <svg class="w-3.5 h-3.5 text-white/90 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+                <!-- Table Footer Trust Ribbon -->
+                <div class="border-t border-amq-border bg-gradient-to-r from-amq-iceBlue via-[#F4F8FC] to-white px-3 sm:px-5 py-3 flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 text-[12px] sm:text-[12.5px] text-amq-navy font-semibold">
+                  <span class="inline-flex items-center gap-1.5">
+                    <span class="text-emerald-600 font-bold">✓</span>
+                    <span>All-inclusive ($395)</span>
+                  </span>
+                  <span class="inline-flex items-center gap-1.5">
+                    <span class="text-emerald-600 font-bold">✓</span>
+                    <span>Done-For-You Filing</span>
+                  </span>
+                  <span class="inline-flex items-center gap-1.5">
+                    <span class="text-emerald-600 font-bold">✓</span>
+                    <span>Corporate Records</span>
+                  </span>
+                  <span class="inline-flex items-center gap-1.5">
+                    <span class="text-emerald-600 font-bold">✓</span>
+                    <span>Dedicated Expert Support</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3 -->
+          <section id="section-3" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-4 border-l-4 border-amq-navy pl-3">
+              How to Incorporate in Ontario: 6 Steps
+            </h2>
+            
+            <div class="space-y-6 text-[15px] text-slate-700 leading-relaxed">
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 1: Choose Your Ontario Corporation Name</h3>
+                <p class="mb-2">Before filing, choose your corporate name structure:</p>
+                <ul class="list-disc pl-5 space-y-1.5">
+                  <li><strong>The Numbered Corporation:</strong> You can use a numbered corporate name (for example, 12345678 Ontario Inc.) and register a separate business name later if you want to operate under another name.</li>
+                  <li><strong>The Named Corporation:</strong> Your chosen name must meet Ontario's naming requirements and generally end with a legal identifier (Inc. or Corp.). Professional corporations have additional naming rules.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 2: Get a NUANS®Report (If Required)</h3>
+                <p>Named corporations generally require an official Ontario-biased NUANS® report. A preliminary name search can help identify possible conflicts. The report must be dated no more than 90 days before the Articles of Incorporation are submitted. Numbered corporations generally do not require a NUANS® report.</p>
+                <p class="text-[13px] text-slate-500 italic mt-1.5">Official source: <a href="https://www.ontario.ca/laws/regulation/210394" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario Regulation 394/21 – Names and Filings</a></p>
+              </div>
+
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 3: Prepare Your Articles of Incorporation</h3>
+                <p class="mb-2">The Articles of Incorporation set out your company's structure, including share classes and restrictions. Depending on your plans, a share structure may include Class A Voting Common Shares (for founders), Class B Non-Voting Common Shares, and Class C Preferred Shares.</p>
+                <p>However, issuing shares to family members requires careful tax planning. Canada's Tax on Split Income (TOSI) rules may restrict certain dividend income, even when non-voting shares are used.</p>
+                <p class="text-[13px] text-slate-500 italic mt-1.5">Official source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12000-taxable-amount-dividends-eligible-other-than-eligible-taxable-canadian-corporations/tax-split-income-tosi.html" target="_blank" class="text-amq-accentBlue hover:underline font-medium">CRA – Tax on Split Income</a></p>
+              </div>
+
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 4: File Through the Ontario Business Registry (OBR)</h3>
+                <p>Once your application is accepted through the Ontario Business Registry (OBR), you receive your Certificate of Incorporation and Ontario Corporation Number (OCN). A unique Company Key manages future corporate filings. Keep it secure and confidential.</p>
+              </div>
+
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 5: Set Up Your Corporate Minute Book and Records</h3>
+                <p class="mb-2">After incorporation, complete and maintain your Corporate Minute Book. It typically contains corporate bylaws, director and shareholder resolutions, and share registers.</p>
+                <p>Maintain a private Individuals with Significant Control (ISC) register identifying anyone owning or controlling 25% or more of corporate voting shares. Update the register annually and within 15 days of changes.</p>
+                <p class="text-[13px] text-slate-500 italic mt-1.5">Official source: <a href="https://www.ontario.ca/page/business-corporations-act-beneficial-ownership-information" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Beneficial Ownership Information Requirements</a></p>
+              </div>
+
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 6: Set Up CRA Accounts and Required Registrations</h3>
+                <p class="mb-2">Upon incorporation, the CRA generally automatically assigns a Business Number (BN) and a Corporate Income Tax (RC) program account.</p>
+                <p>Depending on your needs, you may require additional accounts such as GST/HST (RT) and Payroll Deductions (RP). If your business requires WSIB coverage, you have 10 calendar days from hiring your first employee to register.</p>
+                <p class="text-[13px] text-slate-500 italic mt-1.5">Official sources: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/register.html" target="_blank" class="text-amq-accentBlue hover:underline font-medium">CRA – Corporation Income Tax Program Account</a> · <a href="https://www.wsib.ca/en/businesses/registration-and-coverage" target="_blank" class="text-amq-accentBlue hover:underline font-medium">WSIB – How to Register</a></p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 4 -->
+          <section id="section-4" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-3.5 border-l-4 border-amq-navy pl-3">
+              Types of Corporations in Ontario: Specialized Options
+            </h2>
+            <p class="text-[15px] text-slate-700 leading-relaxed mb-3">
+              Ontario businesses can use different corporate structures depending on their industry, ownership needs, and long-term goals:
+            </p>
+            <ul class="list-disc pl-5 text-[15px] text-slate-700 space-y-2 leading-relaxed">
+              <li><strong>Personal Real Estate Corporations (PREC):</strong> Allow eligible real estate professionals to earn commercial commissions through a corporation, subject to brokerage agreements and RECO regulations.</li>
+              <li><strong>Professional Corporations (PC):</strong> Regulated professionals, including physicians, lawyers, and accountants, may incorporate under profession-specific legislation. Incorporation does not remove personal liability for professional negligence.</li>
+              <li><strong>Holding Companies:</strong> Commonly used to hold passive investments, real estate, or shares in operating businesses separately to manage operational risk.</li>
+              <li><strong>Ontario Not-for-Profit Corporations (ONCA):</strong> Formed under the Not-for-Profit Corporations Act for public benefit or community objectives without share capital. Separate CRA charitable registration is required to issue official donation receipts.</li>
+            </ul>
+            <p class="text-[13px] text-slate-500 italic mt-3">
+              Official sources: <a href="https://www.reco.on.ca/" target="_blank" class="text-amq-accentBlue hover:underline font-medium">RECO – Personal Real Estate Corporations</a> · <a href="https://www.ontario.ca/laws/statute/90b16" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Business Corporations Act</a> · <a href="https://www.ontario.ca/laws/statute/10n15" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Not-for-Profit Corporations Act, 2010</a> · <a href="https://www.canada.ca/en/services/taxes/charities.html" target="_blank" class="text-amq-accentBlue hover:underline font-medium">CRA – Charities and Giving</a>
+            </p>
+          </section>
+
+          <!-- Section 5 -->
+          <section id="section-5" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-3.5 border-l-4 border-amq-navy pl-3">
+              Common Post-Incorporation Mistakes to Avoid in Ontario
+            </h2>
+            <p class="text-[15px] text-slate-700 leading-relaxed mb-3">
+              After incorporation, several filing and compliance requirements still apply:
+            </p>
+            <ul class="list-disc pl-5 text-[15px] text-slate-700 space-y-2.5 leading-relaxed">
+              <li><strong>Missing the 60-Day Initial Return:</strong> Ontario corporations generally must file an Initial Return through the OBR within 60 days of incorporation to confirm director and corporate details.</li>
+              <li><strong>Inaccurate Registered Office Address</strong> Your corporation must continuously maintain an accessible physical registered office address in Ontario where legal notices and official documents can be served.</li>
+              <li><strong>Failing to Maintain Corporate Records</strong> Banks and commercial lenders frequently request your corporate Minute Book and share registers to verify ownership and corporate standing before opening business accounts.</li>
+              <li><strong>Forgetting the Annual Return</strong> Ontario corporations must file an Annual Return through the OBR within six months after their fiscal year-end, which is a separate obligation from the annual CRA T2 corporate tax return.</li>
+            </ul>
+            <p class="text-[13px] text-slate-500 italic mt-3">
+              Official sources: <a href="https://www.ontario.ca/laws/statute/90c39" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Corporations Information Act</a> · <a href="https://www.ontario.ca/page/ontario-business-registry" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario Business Registry</a>
+            </p>
+          </section>
+
+          <!-- Section 6: ACCORDION FAQ -->
+          <section id="section-6" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-4 border-l-4 border-amq-navy pl-3">
+              Frequently Asked Questions About Incorporating in Ontario
+            </h2>
+            
+            <div class="space-y-3" id="faq-accordion-group">
+              
+              <div class="faq-item border border-amq-border bg-white rounded-lg shadow-2xs">
+                <button onclick="toggleFaq(this)" class="w-full text-left px-5 py-4 flex items-center justify-between hover:bg-amq-iceBlue/40 transition cursor-pointer">
+                  <span class="font-semibold text-slate-900 text-[15px] pr-4">
+                    When should you hire a corporate lawyer vs. an online incorporation service like AMQLegals?
+                  </span>
+                  <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-accordion-grid">
+                  <div class="faq-accordion-inner px-5 bg-slate-50/60">
+                    <div class="pb-4 pt-1 text-[14px] text-slate-600 leading-relaxed border-t border-amq-border">
+                      A corporate lawyer is best suited for complex mergers or specialized shareholder agreements. While DIY government filing lacks essential minute books, AMQLegals delivers bank-ready Articles, corporate records, and direct OBR filing in just 1–2 business hours—without law firm hourly rates or scheduling delays.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item border border-amq-border bg-white rounded-lg shadow-2xs">
+                <button onclick="toggleFaq(this)" class="w-full text-left px-5 py-4 flex items-center justify-between hover:bg-amq-iceBlue/40 transition cursor-pointer">
+                  <span class="font-semibold text-slate-900 text-[15px] pr-4">
+                    How long does it take to incorporate a business in Ontario?
+                  </span>
+                  <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-accordion-grid">
+                  <div class="faq-accordion-inner px-5 bg-slate-50/60">
+                    <div class="pb-4 pt-1 text-[14px] text-slate-600 leading-relaxed border-t border-amq-border">
+                      Online incorporation through the Ontario Business Registry is processed immediately once complete and accepted.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item border border-amq-border bg-white rounded-lg shadow-2xs">
+                <button onclick="toggleFaq(this)" class="w-full text-left px-5 py-4 flex items-center justify-between hover:bg-amq-iceBlue/40 transition cursor-pointer">
+                  <span class="font-semibold text-slate-900 text-[15px] pr-4">
+                    What is the difference between an OCN, a BIN, and a CRA BN?
+                  </span>
+                  <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-accordion-grid">
+                  <div class="faq-accordion-inner px-5 bg-slate-50/60">
+                    <div class="pb-4 pt-1 text-[14px] text-slate-600 leading-relaxed border-t border-amq-border">
+                      An OCN is assigned to incorporated companies. A BIN is an Ontario Business Identification Number issued via ServiceOntario. A BN is a 9-digit federal identifier issued by the CRA for corporate tax accounts.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Final Call to Action -->
+          <section class="bg-gradient-to-br from-amq-iceBlue via-white to-slate-50 p-6 sm:p-8 rounded-xl border border-amq-border shadow-[0_10px_25px_-5px_rgba(15,41,74,0.10),0_6px_10px_-4px_rgba(15,41,74,0.05)]">
+            <h3 class="text-xl sm:text-2xl font-extrabold tracking-tight text-amq-navy mb-2">Ready to Incorporate Your Business in Ontario?</h3>
+            <p class="text-[14px] sm:text-[15px] text-slate-700 leading-relaxed mb-4">
+              <strong>AMQLegals</strong> simplifies incorporation by preparing your corporate documents and handling the government filing, so you can focus on building your business instead of dealing with paperwork.
+            </p>
+            <div class="mt-5">
+              <a href="https://amqlegals.ca/product/ontario-corporation-registration/" target="_blank" class="inline-flex items-center space-x-2 bg-amq-navy hover:bg-amq-navyHover text-white font-extrabold px-6 py-3.5 rounded-lg text-sm transition shadow-sm hover:shadow">
+                <span>Start Incorporating with AMQLegals Now</span>
+                <svg class="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </section>
+
+        </article>
+
+        <!-- GUIDE 2: MASTER BUSINESS LICENSE (MBL) -->
+        <article id="guide-mbl" class="hidden space-y-8">
+          
+          <div class="editorial-badge-bar flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3 mb-2">
+            <div class="flex items-center space-x-2 text-xs text-slate-500 font-medium">
+              <a href="https://amqlegals.ca/" target="_blank" class="hover:underline">Home</a>
+              <span>/</span>
+              <span>Guides</span>
+              <span>/</span>
+              <span class="text-amq-navy font-semibold">Master Business License</span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amq-iceBlue text-amq-navy border border-amq-iceBorder">
+                <span class="w-2 h-2 rounded-full bg-amq-navy"></span>
+                <span>Word Count: <strong id="mbl-word-count" class="text-amq-navy">Calculating...</strong></span>
+              </span>
+              <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-amq-iceBlue text-amq-navy border border-amq-iceBorder">
+                Target: 800 – 1,500 Words (Compliant)
+              </span>
+            </div>
+          </div>
+
+          <!-- Section Intro (Direct Scroll Target for MBL Overview) -->
+          <div id="mbl-intro" class="scroll-mt-24 guide-section border-b border-slate-200 pb-6">
+            <h1 class="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-amq-headingText tracking-tight leading-tight">
+              Master Business License in Ontario (2026): Cost, Steps & Renewal
+            </h1>
+            <div class="mt-4 text-slate-600 text-[15px] sm:text-[16px] leading-relaxed space-y-3">
+              <p>
+                Ontario no longer issues a <strong>Master Business Licence (MBL)</strong>. Since the <strong>Ontario Business Registry (OBR)</strong> launched on <strong>October 19, 2021</strong>, new filings receive a <strong>Certificate of Registration</strong> instead. Existing MBLs remain valid until expiry or cancellation. Sole proprietors, general partnerships, and corporations must register qualifying business names under Ontario’s <em>Business Names Act</em>.
+              </p>
+              <p>
+                Registering a business name <strong>does not create a new legal entity</strong> or change the underlying business structure. Sole proprietors and general partners generally remain <strong>personally liable</strong> for business obligations; a corporation using an operating name remains a separate legal entity.
+              </p>
+              <p class="text-[13px] text-slate-500 italic pt-1">
+                Official source: <a href="https://www.ontario.ca/page/ontario-business-registry" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario Business Registry – Business Names Act Requirements</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 1 (Node 2: When to Register an MBL) -->
+          <section id="mbl-sec-1" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-3.5 border-l-4 border-amq-navy pl-3">
+              Who Needs a Master Business License in Ontario?
+            </h2>
+            <div class="text-[15px] text-slate-700 leading-relaxed space-y-3 mb-4">
+              <p>
+                Register a business name when operating under a name other than the legal name required for your business structure. The registration records your operating name and may be requested by financial institutions as proof of business registration.
+              </p>
+              <ul class="list-disc pl-5 space-y-1 text-slate-700">
+                <li><strong>Sole Proprietorships:</strong> Freelancers and contractors operating under a trade name.</li>
+                <li><strong>General Partnerships:</strong> Two or more partners trading under a joint business name.</li>
+                <li><strong>Corporate Operating Names:</strong> Corporations (e.g., <em>12345678 Ontario Inc.</em>) operating a distinct trade brand.</li>
+                <li><strong>New Ventures:</strong> Entrepreneurs testing commercial viability with low upfront costs.</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-amq-iceBlue via-white to-slate-50 border-l-4 border-amq-border p-4 sm:p-4.5 text-[14px] text-slate-800 my-5 border-y border-r border-amq-border rounded-r-lg shadow-2xs">
+              <strong class="text-amq-navy block mb-1 font-bold">📌 CRA Tax & GST/HST Rule:</strong>
+              Sole proprietors report business income on personal CRA T1 returns (<em>Form T2125</em>). GST/HST registration is generally required when worldwide taxable supplies, including those of associated persons, exceed <strong>$30,000</strong> in a single calendar quarter or over four consecutive calendar quarters.
+            </div>
+            <p class="text-[13px] text-slate-500 italic">
+              Official source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships.html" target="_blank" class="text-amq-accentBlue hover:underline font-medium">CRA – Business Reporting</a>
+            </p>
+          </section>
+
+          <!-- Section 2 (Node 3: Costs, Validity & Statutory Rules) -->
+          <section id="mbl-sec-2" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-3.5 border-l-4 border-amq-navy pl-3">
+              Ontario Master Business License: Fees, Validity & Rules
+            </h2>
+            <p class="text-[15px] text-slate-700 leading-relaxed mb-4">
+              Key statutory standards, provincial filing fees, and registry compliance requirements governing Ontario business name registrations in 2026:
+            </p>
+
+            <div class="overflow-x-auto rounded-lg border border-amq-border mb-5 bg-white shadow-[0_10px_25px_-5px_rgba(15,41,74,0.10),0_6px_10px_-4px_rgba(15,41,74,0.05)]">
+              <table class="w-full text-left text-[14px] border-collapse min-w-[550px] sm:min-w-0">
+                <thead class="bg-amq-navy text-white text-[13px] font-bold uppercase tracking-wider">
+                  <tr>
+                    <th class="p-3.5 w-1/3 border-b border-r border-slate-700/80">Regulatory Rule</th>
+                    <th class="p-3.5 border-b border-slate-700/80">Ontario Requirement</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-amq-border bg-white">
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Governing Legislation</td>
+                    <td class="p-3.5 text-slate-700">Ontario <em>Business Names Act</em>, R.S.O. 1990, c. B.17</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Entity Legal Status</td>
+                    <td class="p-3.5 text-slate-700">Does not create a separate legal entity; underlying business structure remains unchanged.</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Provincial Registry Fees</td>
+                    <td class="p-3.5 text-slate-700"><strong>CAD $60</strong> (New registration / 5-year renewal); <strong>CAD $0</strong> for online amendments or cancellations</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Statutory Validity Period</td>
+                    <td class="p-3.5 text-slate-700"><strong>5 Years</strong> (Renewal available from 6 months before expiry to 60 days after expiry).</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Provincial Identifier Issued</td>
+                    <td class="p-3.5 text-slate-700">9-digit <strong>Business Identification Number (BIN)</strong></td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Proprietary Name Protection</td>
+                    <td class="p-3.5 text-slate-700"><span class="text-rose-700 font-semibold">No guaranteed</span> exclusive brand protection or trademark rights.</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-semibold text-slate-900 bg-slate-50/70 border-r border-amq-border">Registered Office Address</td>
+                    <td class="p-3.5 text-slate-700">Business Address: Principal place of business in Ontario, if applicable, or outside Ontario if the business has no Ontario location. A separate address for service is also required.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-gradient-to-r from-amq-iceBlue via-white to-slate-50 border-l-4 border-amq-border p-5 sm:p-5.5 text-[14px] text-slate-800 my-6 border-y border-r border-amq-border rounded-r-lg shadow-[0_4px_16px_-2px_rgba(15,41,74,0.06)]">
+              <strong class="text-amq-navy block mb-1.5 font-bold">📌 Critical Legal Rule on Name Ownership:</strong>
+              Business Name Registration <strong>does not grant trademark rights</strong> or guarantee exclusive use of a brand name. Search the Ontario Business Registry and CIPO’s Canadian Trademarks Database before choosing a name.
+            </div>
+            <p class="text-[13px] text-slate-500 italic">
+              Official sources: 
+              <a href="https://www.ontario.ca/page/business-services-fees" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Business Registry Service Fees</a> · 
+              <a href="https://www.ontario.ca/laws/statute/90b17" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Business Names Act</a>
+            </p>
+          </section>
+
+          <!-- Section 3 (Node 4: Filing Paths Decision Matrix) -->
+          <section id="mbl-sec-3" class="scroll-mt-24 guide-section pt-2">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-2 border-l-4 border-amq-navy pl-3">
+              Ontario Business Name Registration: DIY, Lawyer or Online Service?
+            </h2>
+            <p class="text-[14.5px] text-slate-700 leading-relaxed mb-4">
+              You do not need a lawyer to register a Master Business License in Ontario. Choose the filing route that matches your operational complexity, budget, and time:
+            </p>
+
+            <div class="overflow-x-auto rounded-lg border border-amq-border shadow-[0_10px_25px_-5px_rgba(15,41,74,0.10),0_6px_10px_-4px_rgba(15,41,74,0.05)] bg-white">
+              <table class="w-full text-left text-[13px] border-collapse min-w-[720px] lg:min-w-0">
+                <thead class="bg-amq-navy text-white text-[12px] font-bold uppercase tracking-wider">
+                  <tr>
+                    <th class="p-3 w-[22%] border-b border-slate-700/80 whitespace-nowrap">Filing Path</th>
+                    <th class="p-3 w-[18%] border-b border-slate-700/80 whitespace-nowrap">Estimated Cost</th>
+                    <th class="p-3 w-[18%] border-b border-slate-700/80 whitespace-nowrap">Processing Time</th>
+                    <th class="p-3 w-[42%] border-b border-slate-700/80">What to Consider (Pros & Cons)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-amq-border">
+                  
+                  <tr class="hover:bg-slate-50/70 transition-colors">
+                    <td class="p-3 align-top border-r border-amq-border bg-white">
+                      <span class="font-bold text-slate-900 block text-[13.5px]">Direct Self-Filing</span>
+                      <span class="text-[11px] text-slate-500 font-medium">(OBR DIY Portal)</span>
+                    </td>
+                    <td class="p-3 align-top border-r border-amq-border bg-white whitespace-nowrap">
+                      <span class="font-bold text-slate-900 text-[13.5px] block">CAD $60 <span class="text-[11px] font-normal text-slate-500">(Gov fee)</span></span>
+                      <span class="block text-[11px] text-slate-500 mt-0.5">+ your time & manual effort</span>
+                    </td>
+                    <td class="p-3 align-top border-r border-amq-border bg-white whitespace-nowrap">
+                      <span class="inline-flex items-center px-2 py-0.5 rounded text-[11.5px] font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                        Immediate to a few days
+                      </span>
+                    </td>
+                    <td class="p-3 align-top bg-white text-slate-600 leading-relaxed text-[13px]">
+                      <strong class="text-slate-800">Lowest upfront fee, but:</strong> Requires an Ontario.ca Login, an Ontario Business Account, and accurate NAICS code selection. Managing an existing OBR profile also requires its Company Key. Registry or address errors risk bank rejection.
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-slate-50/70 transition-colors">
+                    <td class="p-3 align-top border-r border-amq-border bg-white">
+                      <span class="font-bold text-slate-900 block text-[13.5px]">Traditional Law Firm</span>
+                      <span class="text-[11px] text-slate-500 font-medium">(Retained Counsel)</span>
+                    </td>
+                    <td class="p-3 align-top border-r border-amq-border bg-white whitespace-nowrap">
+                      <span class="font-bold text-slate-800 text-[13.5px] block">CAD $400 – $800</span>
+                      <span class="block text-[11px] text-slate-500 mt-0.5">+ HST & disbursements</span>
+                    </td>
+                    <td class="p-3 align-top border-r border-amq-border bg-white whitespace-nowrap">
+                      <span class="inline-flex items-center px-2 py-0.5 rounded text-[11.5px] font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                        1 to 2 Weeks
+                      </span>
+                    </td>
+                    <td class="p-3 align-top bg-white text-slate-600 leading-relaxed text-[13px]">
+                      <strong class="text-slate-800">Tailored legal advice, but:</strong> A law firm can provide personalized legal advice on partnership agreements, ownership arrangements, and other legal matters. Fees and timelines vary depending on the scope of work.
+                    </td>
+                  </tr>
+
+                  <tr class="bg-gradient-to-r from-amq-iceBlue via-[#F4F8FC] to-white hover:bg-amq-iceBlue/90 transition-colors">
+                    <td class="p-3 align-top border-r border-amq-border">
+                      <div class="space-y-1.5">
+                        <span class="font-extrabold text-amq-navy block text-[13px] leading-snug">
+                          Online Registration<br>Service (AMQLegals)
+                        </span>
+                        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[9.5px] font-extrabold bg-amq-gold text-slate-950 uppercase tracking-tight whitespace-nowrap">
+                          ★ Recommended Choice
+                        </span>
+                      </div>
+                    </td>
+                    <td class="p-3 align-top border-r border-amq-border whitespace-nowrap">
+                      <div class="bg-white p-2 rounded border border-amq-iceBorder inline-block shadow-2xs">
+                        <span class="text-[10.5px] text-slate-400 line-through block">Law Firm: $400 - $800</span>
+                        <span class="text-[15.5px] font-extrabold text-amq-navy block leading-tight">CAD $149 (Only)</span>
+                        <span class="text-[10.5px] text-emerald-700 font-bold block mt-0.5">
+                          $89 Agency + $60 Gov Fee
+                        </span>
+                      </div>
+                    </td>
+                    <td class="p-3 align-top border-r border-amq-border whitespace-nowrap">
+                      <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11.5px] font-extrabold bg-blue-100/70 text-amq-navy border border-blue-200">
+                        ⚡ 1 to 2 Hours
+                      </span>
+                      <span class="block text-[10.5px] text-slate-500 mt-1">Direct OBR integration</span>
+                    </td>
+                    <td class="p-3 align-top">
+                      <div class="space-y-2.5">
+                        <p class="text-slate-800 text-[13px] leading-relaxed">
+                          <strong class="text-amq-navy font-bold">The practical choice:</strong> <a href="https://amqlegals.ca/master-business-license/" target="_blank" class="underline underline-offset-2 text-amq-navy hover:text-amq-accentBlue font-extrabold">AMQLegals</a> provides an all-inclusive $149 package ($60 gov fee + $89 agency fee). We review your trade name, file directly via the OBR, retrieve your Company Key, and deliver bank-ready documents in 1–2 hours.
+                        </p>
+                        <div>
+                          <a href="https://amqlegals.ca/master-business-license/" target="_blank" class="inline-flex items-center gap-2 bg-amq-navy hover:bg-amq-navyHover text-white font-extrabold px-4 py-2.5 rounded-lg text-[12.5px] transition-colors duration-200 shadow-md hover:shadow-lg whitespace-nowrap">
+                            <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                            <span>Register Your Ontario Business Name — $149</span>
+                            <svg class="w-3.5 h-3.5 text-white/90 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <!-- Table Footer Trust Ribbon -->
+              <div class="border-t border-amq-border bg-gradient-to-r from-amq-iceBlue via-[#F4F8FC] to-white px-3 sm:px-5 py-3 flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 text-[12px] sm:text-[12.5px] text-amq-navy font-semibold">
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span>All-inclusive ($149)</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span>Done-For-You Filing</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span>Official 9-Digit BIN</span>
+                </span>
+                <span class="inline-flex items-center gap-1.5">
+                  <span class="text-emerald-600 font-bold">✓</span>
+                  <span>Bank-Ready License</span>
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 4 (Node 5: 4 Steps to Register Online) -->
+          <section id="mbl-sec-4" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-4 border-l-4 border-amq-navy pl-3">
+              How to Register a Master Business License in Ontario
+            </h2>
+            
+            <div class="space-y-6 text-[15px] text-slate-700 leading-relaxed">
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 1: Conduct a Preliminary Business Name Search</h3>
+                <p>
+                  The Ontario Business Registry does not screen for conflicting names. Search CIPO’s <em>Canadian Trademarks Database</em> and consider an Ontario <em>NUANS®</em> search to identify potential conflicts before registering. Using an existing trademark may create infringement risks.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 2: Assemble Your Registration Information</h3>
+                <p class="mb-2">Prepare all mandatory statutory details prior to starting the online application:</p>
+                <ul class="list-disc pl-5 space-y-1.5">
+                  <li><strong>Business Activity (NAICS Code):</strong> Select the North American Industry Classification System code accurately representing your commercial operations.</li>
+                  <li><strong>Business Address:</strong> Provide the principal place of business address. If the business has a location in Ontario, provide its Ontario address; otherwise, provide its principal address outside Ontario. Include the required <strong>address for service</strong>.</li>
+                  <li><strong>Owner Information:</strong> Legal full names, residential addresses, and Canadian contact details of the sole proprietor, general partners, or corporate directors.</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 3: Submit Registration via the Ontario Business Registry (OBR)</h3>
+                <p>
+                  Submit your registration directly through the OBR system or through an authorized filing intermediary like AMQLegals. Upon approval, the registry issues your official Master Business License / Business Name Registration certificate along with your 9-digit <strong>Business Identification Number (BIN)</strong> and a confidential OBR <strong>Company Key</strong> required for future administrative filings and renewals.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="text-base font-bold text-slate-900 mb-1">Step 4: Open a Commercial Bank Account & Set Up CRA Accounts</h3>
+                <p>
+                  Take your official registration certificate and 9-digit BIN to your chosen financial institution to open a dedicated commercial bank account under your operating trade name. Afterwards, link your registration to the Canada Revenue Agency (CRA) by requesting a 9-digit federal <strong>Business Number (BN)</strong> for GST/HST (RT) if your gross revenue meets the <strong>$30,000</strong> statutory threshold, or a Payroll Account (RP) if hiring employees.
+                </p>
+              </div>
+            </div>
+            <p class="text-[13px] text-slate-500 italic mt-4">
+              Official sources: <a href="https://www.ontario.ca/page/business/start/register-your-business-online" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario.ca – Register Your Business Name Online</a> · <a href="https://www.canada.ca/en/services/business/trade-marks.html" target="_blank" class="text-amq-accentBlue hover:underline font-medium">CIPO – Canadian Trademarks Database</a>
+            </p>
+          </section>
+
+          <!-- Section 5 (Node 6: MBL vs. Corporation Detailed Comparison) -->
+          <section id="mbl-sec-5" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-3.5 border-l-4 border-amq-navy pl-3">
+              Master Business License vs. Incorporation
+            </h2>
+            <p class="text-[15px] text-slate-700 leading-relaxed mb-4">
+              Compare the legal, tax, and operational differences between a Master Business License and incorporation:
+            </p>
+
+            <div class="overflow-x-auto rounded-lg border border-amq-border mb-5 bg-white shadow-[0_10px_25px_-5px_rgba(15,41,74,0.10),0_6px_10px_-4px_rgba(15,41,74,0.05)]">
+              <table class="w-full text-left text-[14px] border-collapse min-w-[620px] lg:min-w-0">
+                <thead class="bg-amq-navy text-white text-[13px] font-bold uppercase tracking-wider">
+                  <tr>
+                    <th class="p-3.5 w-1/4 border-b border-r border-slate-700/80">Comparison Factor</th>
+                    <th class="p-3.5 w-[38%] border-b border-r border-slate-700/80">Master Business License (MBL)</th>
+                    <th class="p-3.5 w-[37%] border-b border-slate-700/80">Ontario Corporation (Articles)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-amq-border bg-white">
+                  <tr>
+                    <td class="p-3.5 font-bold text-slate-900 bg-slate-50/70 border-r border-amq-border">Legal Structure</td>
+                    <td class="p-3.5 text-slate-700 border-r border-amq-border">Trade name only; identical to personal owner</td>
+                    <td class="p-3.5 text-slate-700">Distinct legal entity under the <em>OBCA</em></td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-bold text-slate-900 bg-slate-50/70 border-r border-amq-border">Liability Protection</td>
+                    <td class="p-3.5 text-rose-700 font-semibold border-r border-amq-border">Zero protection; personal assets exposed</td>
+                    <td class="p-3.5 text-emerald-700 font-semibold">Limited liability protection for shareholders</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-bold text-slate-900 bg-slate-50/70 border-r border-amq-border">Tax Treatment</td>
+                    <td class="p-3.5 text-slate-700 border-r border-amq-border">Taxed at owner's personal income tax rate (<em>Form T2125</em>)</td>
+                    <td class="p-3.5 text-slate-700">Eligible for Small Business Deduction (<strong>11.2%</strong> active income)</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-bold text-slate-900 bg-slate-50/70 border-r border-amq-border">Statutory Lifespan</td>
+                    <td class="p-3.5 text-slate-700 border-r border-amq-border"><strong>5 Years</strong> (Mandatory renewal required)</td>
+                    <td class="p-3.5 text-slate-700 font-medium text-slate-900">Perpetual existence (Does not expire)</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-bold text-slate-900 bg-slate-50/70 border-r border-amq-border">Name Protection</td>
+                    <td class="p-3.5 text-slate-700 border-r border-amq-border">No proprietary rights granted within Ontario</td>
+                    <td class="p-3.5 text-slate-700 font-medium text-slate-900">Provincial name reservation rights under <em>OBCA</em></td>
+                  </tr>
+                  <tr>
+                    <td class="p-3.5 font-bold text-slate-900 bg-slate-50/70 border-r border-amq-border">All-Inclusive Filing Fee</td>
+                    <td class="p-3.5 font-bold text-slate-900 border-r border-amq-border">CAD $149 (via AMQLegals)</td>
+                    <td class="p-3.5 font-bold text-slate-900">CAD $395 (via AMQLegals)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-gradient-to-r from-amq-iceBlue via-white to-slate-50 border-l-4 border-amq-border p-5 sm:p-5.5 text-[14px] text-slate-800 my-6 border-y border-r border-amq-border rounded-r-lg shadow-[0_4px_16px_-2px_rgba(15,41,74,0.06)]">
+              <strong class="text-amq-navy block mb-1.5 font-bold">📌 Commercial Strategy Insight:</strong>
+              Many businesses start with a Master Business License to keep initial registration simple and costs minimal. Once annual net earnings grow or the business signs commercial leases or enters vendor contracts that increase liability, owners often incorporate an Ontario corporation and transfer operational assets or register the original trade name under the new corporate entity.
+            </div>
+          </section>
+
+          <!-- Section 6 (Node 7: Post-Registration Mistakes to Avoid) -->
+          <section id="mbl-sec-6" class="scroll-mt-24 guide-section">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-3.5 border-l-4 border-amq-navy pl-3">
+              Common Mistakes After Business Name Registration
+            </h2>
+            <p class="text-[15px] text-slate-700 leading-relaxed mb-3">
+              Maintaining an active Master Business License in Ontario requires ongoing compliance with provincial registry rules:
+            </p>
+            <ul class="list-disc pl-5 text-[15px] text-slate-700 space-y-2.5 leading-relaxed">
+              <li><strong>Missing the 60-Day Renewal Window:</strong> Registrations are valid for 5 years and renewable 6 months prior to expiry or up to 60 days past expiry. Exceeding the 60-day post-expiry deadline lapses the registration permanently, forfeits your <strong>Business Identification Number (BIN)</strong>, and causes financial institutions to freeze merchant accounts.</li>
+              <li><strong>Assuming Trademark-Level Name Rights:</strong> Registration does not give exclusive name rights. Consider CIPO trademark registration for stronger nationwide protection.</li>
+              <li><strong>Failing to File Amendments within 15 Days:</strong> Updates to your registered office address, ownership structure, or commercial activities must be filed in the OBR within <strong>15 calendar days</strong> (statutory amendment fee is <strong>CAD $0</strong>).</li>
+              <li><strong>Neglecting Municipal Trade Permits (BizPaL):</strong> An MBL does not replace municipal trade licenses or zoning clearances. Utilize the government’s <em>BizPaL</em> directory to identify municipal permits (such as food handling, personal services, or signage) mandated in your city.</li>
+            </ul>
+            <p class="text-[13px] text-slate-500 italic mt-3">
+              Official sources: <a href="https://www.ontario.ca/laws/statute/90b17" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario – Business Names Act Enforcement</a> · <a href="https://www.ontario.ca/page/ontario-business-registry" target="_blank" class="text-amq-accentBlue hover:underline font-medium">Ontario Business Registry – Renew or Amend a Business Name</a>
+            </p>
+          </section>
+
+          <!-- Section 7 (Node 8: FAQs & Final CTA Card) -->
+          <section id="mbl-sec-7" class="scroll-mt-24 guide-section pt-2">
+            <h2 class="text-xl sm:text-[22px] font-bold text-amq-headingText mb-4 border-l-4 border-amq-navy pl-3">
+              Ontario Business Name Registration FAQs
+            </h2>
+
+            <div class="space-y-3 mb-8">
+              <!-- FAQ 1 -->
+              <div class="faq-item bg-white rounded-lg border border-amq-border overflow-hidden shadow-2xs transition-all duration-200">
+                <button type="button" onclick="const ans = this.nextElementSibling; const icon = this.querySelector('svg'); const isOpen = ans.style.maxHeight && ans.style.maxHeight !== '0px'; document.querySelectorAll('#mbl-sec-7 .faq-answer').forEach(el => el.style.maxHeight = '0px'); document.querySelectorAll('#mbl-sec-7 svg').forEach(el => el.classList.remove('rotate-180')); if (!isOpen) { ans.style.maxHeight = ans.scrollHeight + 'px'; icon.classList.add('rotate-180'); }" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-[15px] text-amq-navy select-none hover:bg-slate-50/60 focus:outline-none cursor-pointer">
+                  <span>What is the difference between an Ontario BIN and a CRA Business Number (BN)?</span>
+                  <svg class="w-5 h-5 text-slate-500 shrink-0 transform transition-transform duration-300 ease-in-out pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div class="faq-answer overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+                  <div class="px-4 sm:px-5 pb-5 pt-1 text-[14.5px] text-slate-700 leading-relaxed border-t border-slate-100">
+                    A <strong>Business Identification Number (BIN)</strong> is a 9-digit provincial identifier issued by the Ontario Business Registry on your Certificate of Registration under the <em>Business Names Act</em> (formerly the Master Business Licence). In contrast, a <strong>Business Number (BN)</strong> is a 9-digit federal identifier issued by the Canada Revenue Agency (CRA) to administer tax programs like GST/HST, payroll, and corporate reporting.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="faq-item bg-white rounded-lg border border-amq-border overflow-hidden shadow-2xs transition-all duration-200">
+                <button type="button" onclick="const ans = this.nextElementSibling; const icon = this.querySelector('svg'); const isOpen = ans.style.maxHeight && ans.style.maxHeight !== '0px'; document.querySelectorAll('#mbl-sec-7 .faq-answer').forEach(el => el.style.maxHeight = '0px'); document.querySelectorAll('#mbl-sec-7 svg').forEach(el => el.classList.remove('rotate-180')); if (!isOpen) { ans.style.maxHeight = ans.scrollHeight + 'px'; icon.classList.add('rotate-180'); }" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-[15px] text-amq-navy select-none hover:bg-slate-50/60 focus:outline-none cursor-pointer">
+                  <span>Do I need to register if I operate solely under my exact legal personal name?</span>
+                  <svg class="w-5 h-5 text-slate-500 shrink-0 transform transition-transform duration-300 ease-in-out pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div class="faq-answer overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+                  <div class="px-4 sm:px-5 pb-5 pt-1 text-[14.5px] text-slate-700 leading-relaxed border-t border-slate-100">
+                    Under the <em>Business Names Act</em>, operating an unincorporated sole proprietorship strictly under your full legal name (e.g., "John Smith") does not require registration. However, adding descriptive business terms such as "John Smith Consulting" legally triggers the requirement to register.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="faq-item bg-white rounded-lg border border-amq-border overflow-hidden shadow-2xs transition-all duration-200">
+                <button type="button" onclick="const ans = this.nextElementSibling; const icon = this.querySelector('svg'); const isOpen = ans.style.maxHeight && ans.style.maxHeight !== '0px'; document.querySelectorAll('#mbl-sec-7 .faq-answer').forEach(el => el.style.maxHeight = '0px'); document.querySelectorAll('#mbl-sec-7 svg').forEach(el => el.classList.remove('rotate-180')); if (!isOpen) { ans.style.maxHeight = ans.scrollHeight + 'px'; icon.classList.add('rotate-180'); }" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-[15px] text-amq-navy select-none hover:bg-slate-50/60 focus:outline-none cursor-pointer">
+                  <span>Can foreign nationals or non-residents register a Master Business License?</span>
+                  <svg class="w-5 h-5 text-slate-500 shrink-0 transform transition-transform duration-300 ease-in-out pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div class="faq-answer overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+                  <div class="px-4 sm:px-5 pb-5 pt-1 text-[14.5px] text-slate-700 leading-relaxed border-t border-slate-100">
+                    While Ontario’s <em>Business Names Act</em> does not strictly ban non-residents, operating a sole proprietorship from abroad is practically difficult due to Canadian banking requirements and personal tax filings. Non-residents seeking 100% foreign business ownership in Ontario typically form an incorporated company under the <em>OBCA</em>, which has no director residency restrictions.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="faq-item bg-white rounded-lg border border-amq-border overflow-hidden shadow-2xs transition-all duration-200">
+                <button type="button" onclick="const ans = this.nextElementSibling; const icon = this.querySelector('svg'); const isOpen = ans.style.maxHeight && ans.style.maxHeight !== '0px'; document.querySelectorAll('#mbl-sec-7 .faq-answer').forEach(el => el.style.maxHeight = '0px'); document.querySelectorAll('#mbl-sec-7 svg').forEach(el => el.classList.remove('rotate-180')); if (!isOpen) { ans.style.maxHeight = ans.scrollHeight + 'px'; icon.classList.add('rotate-180'); }" class="w-full flex items-center justify-between p-4 sm:p-5 text-left font-bold text-[15px] text-amq-navy select-none hover:bg-slate-50/60 focus:outline-none cursor-pointer">
+                  <span>Can I convert my Master Business License into a Corporation later?</span>
+                  <svg class="w-5 h-5 text-slate-500 shrink-0 transform transition-transform duration-300 ease-in-out pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div class="faq-answer overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height: 0px;">
+                  <div class="px-4 sm:px-5 pb-5 pt-1 text-[14.5px] text-slate-700 leading-relaxed border-t border-slate-100">
+                    Yes. An MBL does not convert automatically. When your venture scales, you incorporate an Ontario corporation and formally transfer assets, contracts, and liabilities to the new corporate entity, or register the preexisting trade name directly under your new corporation.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Final Conversion Action Card -->
+            <div class="bg-gradient-to-br from-amq-navy via-[#163866] to-[#0A1D36] text-white rounded-xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+              <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+              <div class="relative z-10 max-w-2xl">
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white tracking-tight mb-2">
+                  Ready to Register Your Business Name?
+                </h3>
+                <p class="text-slate-300 text-[14.5px] leading-relaxed mb-6">
+                  AMQLegals helps business owners prepare their registration details and submit business name filings through the Ontario Business Registry. The team handles the paperwork and filing process, helping you save time and effort.
+                </p>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                  <a href="https://amqlegals.ca/master-business-license/" target="_blank" class="inline-flex items-center justify-center gap-2 bg-amq-gold hover:bg-amber-400 text-slate-950 font-extrabold px-6 py-3 rounded-lg text-[14px] transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap">
+                    <span>Register Business Name — $149 (All-Inclusive)</span>
+                    <svg class="w-4 h-4 text-slate-950 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  </a>
+                  <span class="text-[12px] text-slate-300 text-center sm:text-left flex items-center justify-center sm:justify-start gap-1">
+                    <span class="text-emerald-400 font-bold">✓</span> No hidden fees ($89 agency + $60 gov fee)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+
+      </main>
+
+      <!-- RIGHT STICKY SIDEBAR -->
+      <aside class="w-full lg:w-1/4 sticky top-28 self-start no-print" id="sidebar-container">
+        <div class="bg-white rounded-xl border border-amq-border p-5 shadow-[0_8px_25px_-4px_rgba(15,41,74,0.08)]">
+          
+          <div class="flex items-center space-x-2 border-b border-slate-100 pb-3 mb-3">
+            <span class="status-dot"></span>
+            <h3 id="sidebar-heading-text" class="text-xs font-bold uppercase tracking-wider text-amq-navy">
+              Incorporation Guide Index
+            </h3>
+          </div>
+
+          <!-- Dynamic Sidebar Stepper Timeline Links -->
+          <nav id="sidebar-nav-links" class="timeline-nav space-y-1">
+            <!-- Populated dynamically via JavaScript with Stepper Timeline Nodes -->
+          </nav>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-500">
+            <p class="font-semibold text-slate-800 mb-1">Need help incorporating?</p>
+            <p class="leading-relaxed">AMQLegals prepares and files your Ontario articles in 1–2 hours.</p>
+            <a href="https://amqlegals.ca/product/ontario-corporation-registration/" target="_blank" class="inline-block mt-2 font-bold text-amq-navy hover:underline">
+              Contact legal specialist →
+            </a>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- AUTHENTIC AMQLegals FOOTER -->
+  <footer class="bg-amq-top text-slate-300 text-xs py-12 border-t border-slate-800 no-print mt-16">
+    <div class="app-container">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center space-x-2 text-white font-bold text-base mb-3">
+            <span class="w-7 h-7 rounded bg-white text-amq-navy flex items-center justify-center text-xs font-extrabold">AMQ</span>
+            <span>AMQLegals</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed mb-3">
+            Specializing in seamless company incorporation and business registration across Canada.
+          </p>
+          <p class="text-slate-200 font-semibold">📞 (780) 297-8924</p>
+          <p class="text-slate-200 font-semibold">✉️ info@amqlegals.ca</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Offices</h4>
+          <p class="mb-2"><strong class="text-slate-200">Ontario:</strong> 1200 Bay St., Toronto, ON M5R 2A5</p>
+          <p><strong class="text-slate-200">Alberta:</strong> 16135 142 St NW, Edmonton, AB T6V 0M7</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Services</h4>
+          <ul class="space-y-1.5">
+            <li><a href="https://amqlegals.ca/product/ontario-corporation-registration/" target="_blank" class="hover:text-white transition">Ontario Corporation</a></li>
+            <li><a href="https://amqlegals.ca/" target="_blank" class="hover:text-white transition">Federal Corporation</a></li>
+            <li><a href="https://amqlegals.ca/" target="_blank" class="hover:text-white transition">Master Business License</a></li>
+            <li><a href="https://amqlegals.ca/" target="_blank" class="hover:text-white transition">Minute Book & Bylaws</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Legal</h4>
+          <ul class="space-y-1.5">
+            <li><a href="https://amqlegals.ca/" target="_blank" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="https://amqlegals.ca/" target="_blank" class="hover:text-white transition">Terms & Conditions</a></li>
+            <li><a href="https://amqlegals.ca/" target="_blank" class="hover:text-white transition">Disclaimer</a></li>
+            <li><a href="https://amqlegals.ca/" target="_blank" class="hover:text-white transition">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500">
+        <p>© 2026 AMQLegals. All rights reserved.</p>
+        <p class="mt-2 sm:mt-0">Certified Canadian Liaison & Corporate Filing Services</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING SCROLL NAVIGATION -->
+  <div class="fixed bottom-6 right-6 z-50 no-print" id="scrollNavWidget">
+    <button id="scrollToTopBtn" onclick="scrollToTop()" title="Back to Top" 
+            class="w-11 h-11 rounded-full bg-white hover:bg-amq-navy text-amq-navy hover:text-white shadow-lg border border-amq-border flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-2 cursor-pointer group">
+      <svg class="w-5 h-5 transition-transform duration-200 group-hover:-translate-y-0.5 fill-none stroke-current" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    const navConfigurations = {
+      incorporation: {
+        title: "Incorporate a Business in Ontario",
+        sidebarHeading: "Incorporation Guide Index",
+        sections: [
+          { id: "section-intro", title: "1. Ontario Guide Overview" },
+          { id: "section-1", title: "2. When to Incorporate in Ontario" },
+          { id: "section-2", title: "3. Ontario Costs & Corporate Tax" },
+          { id: "section-2-matrix", title: "4. Choosing an Ontario Filing Path" },
+          { id: "section-3", title: "5. 6 Steps to Incorporate in Ontario" },
+          { id: "section-4", title: "6. Specialized Corporate Types" },
+          { id: "section-5", title: "7. Post-Incorporation Compliance" },
+          { id: "section-6", title: "8. Ontario Incorporation FAQs" }
+        ]
+      },
+      mbl: {
+        title: "Master Business License",
+        sidebarHeading: "Business License Index",
+        sections: [
+          { id: "mbl-intro", title: "1. MBL Guide Overview" },
+          { id: "mbl-sec-1", title: "2. When to Register an MBL" },
+          { id: "mbl-sec-2", title: "3. Ontario MBL Fees & Rules" },
+          { id: "mbl-sec-3", title: "4. Choosing an Ontario Filing Path" },
+          { id: "mbl-sec-4", title: "5. 4 Steps to Register an MBL" },
+          { id: "mbl-sec-5", title: "6. MBL vs. Corporation" },
+          { id: "mbl-sec-6", title: "7. Post-Registration Mistakes" },
+          { id: "mbl-sec-7", title: "8. Ontario Business License FAQs" }
+        ]
+      }
+    };
+
+    let activeGuide = "incorporation";
+    let isUserClicking = false;
+
+    function switchGuide(guideKey) {
+      activeGuide = guideKey;
+      window.location.hash = guideKey;
+
+      document.getElementById('guide-incorporation').classList.toggle('hidden', guideKey !== 'incorporation');
+      document.getElementById('guide-mbl').classList.toggle('hidden', guideKey !== 'mbl');
+
+      const headingEl = document.getElementById('sidebar-heading-text');
+      if (headingEl) {
+        headingEl.innerText = navConfigurations[guideKey].sidebarHeading;
+      }
+
+      const btnIncorp = document.getElementById('nav-btn-incorp');
+      const btnMbl = document.getElementById('nav-btn-mbl');
+
+      if (guideKey === 'incorporation') {
+        btnIncorp.className = "px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all duration-200 bg-white text-amq-navy shadow-xs rounded-md flex items-center space-x-1.5 sm:space-x-2 cursor-pointer whitespace-nowrap";
+        btnMbl.className = "px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold transition-all duration-200 text-slate-300 hover:text-white hover:bg-white/10 rounded-md flex items-center space-x-1.5 sm:space-x-2 cursor-pointer whitespace-nowrap";
+      } else {
+        btnMbl.className = "px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all duration-200 bg-white text-amq-navy shadow-xs rounded-md flex items-center space-x-1.5 sm:space-x-2 cursor-pointer whitespace-nowrap";
+        btnIncorp.className = "px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold transition-all duration-200 text-slate-300 hover:text-white hover:bg-white/10 rounded-md flex items-center space-x-1.5 sm:space-x-2 cursor-pointer whitespace-nowrap";
+      }
+
+      renderSidebarLinks(guideKey);
+      initScrollSpy();
+      updateLiveWordCount();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function renderSidebarLinks(guideKey) {
+      const container = document.getElementById('sidebar-nav-links');
+      const sections = navConfigurations[guideKey].sections;
+      
+      container.innerHTML = sections.map((sec, idx) => `
+        <a href="#${sec.id}" 
+           data-section-id="${sec.id}"
+           onclick="handleSidebarClick(event, '${sec.id}')"
+           class="timeline-step ${idx === 0 ? 'active' : ''}">
+          <span class="timeline-marker">
+            <span class="timeline-marker-inner"></span>
+          </span>
+          <span class="timeline-label">${sec.title}</span>
+        </a>
+      `).join('');
+    }
+
+    function setActiveLink(sectionId) {
+      const links = document.querySelectorAll('.timeline-step');
+      links.forEach(link => {
+        if (link.getAttribute('data-section-id') === sectionId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    function handleSidebarClick(e, sectionId) {
+      e.preventDefault();
+      isUserClicking = true;
+      setActiveLink(sectionId);
+
+      const targetEl = document.getElementById(sectionId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth' });
+        history.replaceState(null, null, `#${sectionId}`);
+      }
+
+      setTimeout(() => {
+        isUserClicking = false;
+      }, 700);
+    }
+
+    function updateScrollSpyOnScroll() {
+      if (isUserClicking) return;
+
+      const activeArticle = document.getElementById(activeGuide === 'incorporation' ? 'guide-incorporation' : 'guide-mbl');
+      const sections = activeArticle.querySelectorAll('.guide-section');
+      
+      const scrollY = window.scrollY || window.pageYOffset;
+      const headerOffset = 110;
+
+      let currentSectionId = '';
+
+      sections.forEach(section => {
+        const top = section.offsetTop - headerOffset;
+        const height = section.offsetHeight;
+        if (scrollY >= top && scrollY < top + height) {
+          currentSectionId = section.id;
+        }
+      });
+
+      if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50) {
+        const lastSection = sections[sections.length - 1];
+        if (lastSection) currentSectionId = lastSection.id;
+      }
+
+      if (currentSectionId) {
+        setActiveLink(currentSectionId);
+      }
+    }
+
+    function initScrollSpy() {
+      window.removeEventListener('scroll', updateScrollSpyOnScroll);
+      window.addEventListener('scroll', updateScrollSpyOnScroll, { passive: true });
+    }
+
+    function toggleFaq(button) {
+      const item = button.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+      
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    /* Live Word Count Logic - Accurate & Dynamic */
+    function updateLiveWordCount() {
+      const isMbl = (activeGuide === 'mbl');
+      const article = document.getElementById(isMbl ? 'guide-mbl' : 'guide-incorporation');
+      if (!article) return;
+      const clone = article.cloneNode(true);
+      const badgeBar = clone.querySelector('.editorial-badge-bar');
+      if (badgeBar) badgeBar.remove();
+      const text = clone.innerText || clone.textContent || '';
+      const words = text.trim().split(/\s+/).filter(Boolean);
+      const targetEl = document.getElementById(isMbl ? 'mbl-word-count' : 'article-word-count');
+      if (targetEl) {
+        targetEl.innerText = words.length.toLocaleString() + ' Words';
+      }
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', () => {
+      const topBtn = document.getElementById('scrollToTopBtn');
+      if (!topBtn) return;
+
+      const scrollY = window.scrollY || window.pageYOffset;
+
+      if (scrollY > 300) {
+        topBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+        topBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      } else {
+        topBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+        topBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash === 'mbl') {
+        switchGuide('mbl');
+      } else {
+        switchGuide('incorporation');
+      }
+      initScrollSpy();
+      updateLiveWordCount();
+    });
+  </script>
+
+</body>
+</html>
